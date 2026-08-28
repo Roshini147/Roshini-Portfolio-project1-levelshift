@@ -1,238 +1,466 @@
-# Roshini-Portfolio-project1-levelshift
-# Roshini A. — Personal Portfolio
+# ROSHINI A. --- Personal Portfolio
+
+A responsive personal portfolio website for **Roshini A.**, a Computer
+Science Engineering student and Full Stack Developer / AI Engineer.
+
+The portfolio presents professional information, technical skills,
+internship experience, projects, education, certifications, achievements
+beyond academics, and contact details in a modern dark-themed interface.
+The project is built with plain HTML, CSS, and JavaScript.
+fileciteturn0file0L5-L13
+
+## ✨ Features
+
+-   **Responsive single-page portfolio** with section-based navigation.
+-   **Fixed navigation bar** with Home, About, Skills, Experience,
+    Projects, Education, and Contact sections.
+-   **Mobile hamburger menu** for smaller screens.
+-   **Smooth scrolling** between portfolio sections.
+-   **Active navigation highlighting** that updates while scrolling.
+-   **Hero section** with profile image, role, introduction, and calls
+    to action.
+-   **About section** describing the developer profile and technical
+    focus.
+-   **Technology Stack section** covering:
+    -   Java
+    -   Python
+    -   JavaScript
+    -   SQL
+    -   React.js
+    -   HTML5
+    -   CSS3
+    -   Spring Boot
+    -   REST APIs
+    -   MySQL
+    -   MongoDB
+    -   Git
+    -   GitHub
+    -   VS Code
+-   **Animated skill bars** that reveal when the skills section enters
+    the viewport.
+-   **Internship experience timeline**.
+-   **Featured project cards** for software development, web application
+    development, and AI/data-focused development.
+-   **Education and certifications** section.
+-   **Beyond Academics** section highlighting internships, software
+    development, certifications, and problem solving.
+-   **Contact section** with email, location, LinkedIn, GitHub,
+    LeetCode, HackerRank, and a contact form.
+-   **Client-side form validation** for name, email, phone number, and
+    message.
+-   **Loading, success, and error states** for contact form submission.
+-   **Google Apps Script integration** for sending contact-form data.
+-   **Scroll-reveal animations** using `IntersectionObserver`.
+-   **Reduced-motion support** through `prefers-reduced-motion`.
+-   **Accessibility features** including a skip-to-content link, visible
+    keyboard focus states, ARIA labels, and live form status messaging.
+-   **Responsive layouts** for laptop, tablet, and mobile screen sizes.
+    fileciteturn0file1L91-L148 fileciteturn0file1L148-L234
+
+## 🛠️ Technologies Used
+
+  -----------------------------------------------------------------------
+  Technology                          Purpose
+  ----------------------------------- -----------------------------------
+  HTML5                               Page structure, semantic sections,
+                                      forms, navigation, and content
+
+  CSS3                                Layout, responsive design,
+                                      gradients, animations, cards,
+                                      timeline, and visual styling
+
+  Vanilla JavaScript                  Navigation behavior, animations,
+                                      validation, and form submission
+
+  Google Fonts                        Inter and JetBrains Mono typography
+
+  Google Apps Script                  Contact-form submission endpoint
+  -----------------------------------------------------------------------
+
+The stylesheet defines the visual system, including the dark background,
+typography, accent colors, card styles, buttons, responsive breakpoints,
+and animations. fileciteturn0file2L6-L41
+
+## 📁 Project Structure
+
+``` text
+portfolio/
+│
+├── index.html
+├── style.css
+├── script.js
+├── profile.png
+└── README.md
+```
+
+### File Description
+
+-   **`index.html`** --- Main portfolio page containing all sections and
+    content.
+-   **`style.css`** --- Complete visual design, layout, animations,
+    accessibility states, and responsive styles.
+-   **`script.js`** --- Interactive behavior, navigation, scroll
+    animations, skill animations, and contact-form logic.
+-   **`profile.png`** --- Profile image displayed in the hero section.
+-   **`README.md`** --- Project documentation and setup instructions.
 
-![Portfolio](https://img.shields.io/badge/Portfolio-Full%20Stack%20Developer-blue)
-![Java](https://img.shields.io/badge/Java-Programming-orange)
-![JavaScript](https://img.shields.io/badge/JavaScript-Frontend-yellow)
-![AI](https://img.shields.io/badge/AI%20%26%20ML-Engineer-purple)
-![Responsive](https://img.shields.io/badge/Design-Responsive-success)
+> **Important:** The uploaded source files use the names
+> `index(4).html`, `style(3).css`, and `script(4).js`, but the HTML
+> references `style.css` and `script.js`. For a clean GitHub project,
+> rename the files to `index.html`, `style.css`, and `script.js`, or
+> update the references in `index.html` accordingly. The HTML also
+> expects `profile.png` in the same project directory.
+> fileciteturn0file0L10-L14 fileciteturn0file0L97-L100
 
-## 🌐 About
+## ⚙️ Setup and Installation
 
-Welcome to my personal developer portfolio.
+This is a front-end project and does not require Node.js, npm, React, or
+a database.
 
-I am **Roshini A.**, a Computer Science and Engineering student and an aspiring **Full Stack Developer & AI Engineer** interested in building scalable web applications and intelligent software solutions.
+### 1. Download or Clone the Repository
 
-This portfolio showcases my technical skills, education, internships, certifications, achievements, and professional interests.
+If the project is hosted on GitHub:
 
----
+``` bash
+git clone <your-repository-url>
+cd portfolio
+```
 
-## ✨ Portfolio Highlights
+Or download the repository as a ZIP file and extract it.
 
-- 👩‍💻 Full Stack Development
-- 🤖 Artificial Intelligence & Machine Learning
-- ☕ Java Development
-- 🌐 Web Development
-- 📊 Data Science & Analytics
-- 🔗 REST API Development
-- 🗄️ Database Technologies
-- 📱 Responsive Web Design
-- ♿ Accessible Web Development
-- 🧩 Problem Solving & DSA
+### 2. Check the Project Files
 
----
+Make sure the project contains:
 
-## 🛠️ Technologies
+``` text
+index.html
+style.css
+script.js
+profile.png
+```
 
-### Programming Languages
+### 3. Verify File References
 
-- Java
-- Python
-- C++
-- JavaScript
+Inside `index.html`, confirm that the stylesheet and JavaScript files
+are referenced as:
 
-### Frontend Development
+``` html
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+```
 
-- HTML5
-- CSS3
-- JavaScript
-- React.js
-- Responsive Web Design
-- Accessibility
+The profile image should be available as:
 
-### Backend Development
+``` html
+<img src="profile.png" ...>
+```
 
-- Java
-- Spring Boot
-- Node.js
-- Express.js
-- REST APIs
+### 4. Run the Website
 
-### Databases
+You can run the portfolio directly by opening:
 
-- MySQL
-- MongoDB
+``` text
+index.html
+```
 
-### AI & Data
+in a modern web browser.
 
-- Artificial Intelligence
-- Machine Learning
-- Data Science
-- Data Analytics
+For a better local development experience, use **VS Code + Live
+Server**:
 
-### Tools & Platforms
+1.  Open the project folder in Visual Studio Code.
+2.  Install the **Live Server** extension if it is not already
+    installed.
+3.  Right-click `index.html`.
+4.  Select **Open with Live Server**.
+5.  The portfolio will open in your browser.
 
-- Git
-- GitHub
-- VS Code
-- AWS
-- Firebase
-- Figma
+## ▶️ How the Website Works
 
----
+### Navigation
 
-## 🎓 Education
+The website uses anchor-based section navigation:
 
-### B.Tech — Computer Science and Engineering
+``` text
+Home
+About
+Skills
+Experience
+Projects
+Education
+Contact
+```
 
-**J.N.N Institute of Engineering, Chennai**
+JavaScript adds smooth scrolling and automatically updates the active
+navigation item based on the section currently visible on the screen.
+fileciteturn0file1L53-L91 fileciteturn0file1L91-L148
 
-Currently pursuing my undergraduate degree in Computer Science and Engineering.
+### Mobile Navigation
 
----
+On tablet and mobile screens, the desktop navigation is replaced with a
+hamburger menu. Clicking the menu button opens or closes the mobile
+navigation, and the menu closes when a navigation link is selected or
+the `Escape` key is pressed. fileciteturn0file1L10-L51
 
-## 💼 Internship Experience
+### Scroll Animations
 
-### LevelShifT
+Portfolio cards and sections receive reveal animations when they enter
+the viewport. The implementation uses the browser's
+`IntersectionObserver` API and includes a fallback for browsers that do
+not support it. fileciteturn0file1L148-L234
 
-**Full Stack Developer Intern**
+### Skill Bar Animation
 
-Worked on practical software development tasks and strengthened my knowledge of full-stack development.
+The skill bars initially start at zero width. When they become visible,
+JavaScript restores their target widths to create an animated progress
+effect. fileciteturn0file1L160-L177
 
-### Cognifyz Technologies
+### Contact Form
 
-**Internship Experience**
+The contact form collects:
 
-Gained practical exposure to software development and technical problem solving.
+-   Name
+-   Email
+-   Phone
+-   Message
 
-### Oasis Infobyte
+Before submission, JavaScript validates all required fields. Email
+addresses are checked with an email pattern, while phone numbers are
+validated after removing common separators such as spaces, parentheses,
+periods, and hyphens. fileciteturn0file1L234-L382
 
-**Web Development Internship**
+After successful validation, the form sends the submitted values to a
+configured Google Apps Script Web App endpoint and displays a success or
+error status. fileciteturn0file1L385-L505
 
-Worked on web development tasks and improved frontend development skills.
+## 📩 Contact Form Configuration
 
-### Prodigy InfoTech
+The JavaScript currently contains a Google Apps Script Web App URL:
 
-**Development Internship**
+``` javascript
+const SCRIPT_URL = "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL";
+```
 
-Developed practical programming and web development skills through project-based learning.
+For your own deployment, replace the existing endpoint with your own
+Google Apps Script Web App URL.
 
-### YuvaIntern
+The frontend sends these parameters:
 
-**Technical Internship**
+``` text
+name
+email
+phone
+message
+```
 
-Gained hands-on experience through practical development activities.
+### Important Security / Deployment Note
 
----
+The current frontend uses a Google Apps Script Web App URL directly from
+client-side JavaScript and submits the form with a `GET` request using
+`no-cors`. The current code therefore assumes that the Google Apps
+Script endpoint is already deployed and configured to receive these
+values. fileciteturn0file1L4-L8 fileciteturn0file1L452-L500
 
-## 📜 Certifications
+If you publish the project publicly, review your Google Apps Script
+deployment permissions and avoid placing sensitive credentials or
+secrets in frontend code.
 
-Some of my certifications and learning achievements include:
+## 🎨 Design and Responsive Behavior
 
-- Responsive Web Design — freeCodeCamp
-- Artificial Intelligence — Infosys Springboard
-- Generative AI — Microsoft & LinkedIn
-- Data Science & Analytics — HP LIFE
-- Software Engineering — Accenture
-- Web Development Fundamentals — IBM
-- Cybersecurity Fundamentals — IBM
-- TCS iON Young Professional
-- HTML & CSS — NASSCOM
+The portfolio uses a dark modern interface with:
 
----
+-   Dark gradient background
+-   Blue, purple, and cyan accent colors
+-   Glass-style cards
+-   Gradient buttons
+-   Floating hero elements
+-   Animated skill bars
+-   Scroll-reveal effects
+-   Responsive grids
+-   Mobile navigation
 
-## 🏆 Achievements
+The CSS includes dedicated breakpoints for laptop screens up to
+`1180px`, tablets up to `1024px`, and mobile devices up to `640px`.
+fileciteturn0file2L522-L578 fileciteturn0file2L578-L927
 
-- 🎓 Google Student Ambassador
-- 🚀 Completed Responsive Web Design Developer Certification
-- 💻 Participated in technical development programs and hackathons
-- 🧠 Continuously improving Data Structures and Algorithms
-- 🌐 Building projects in Full Stack Development and AI
+## ♿ Accessibility
 
----
+The project includes several accessibility-oriented features:
 
-## 🌍 Languages
+-   Skip-to-content link
+-   Semantic HTML structure
+-   `aria-label` attributes for navigation and controls
+-   `aria-expanded` for the mobile menu
+-   `aria-controls` for the hamburger button
+-   Keyboard `Escape` support for closing the mobile menu
+-   Visible `:focus-visible` states
+-   `role="alert"` for field validation messages
+-   `role="status"` and `aria-live="polite"` for contact-form status
+-   Reduced-motion support for users who prefer less animation.
+    fileciteturn0file0L17-L50 fileciteturn0file2L61-L83
 
-- English
-- Tamil
-- French
-- Japanese
+## 🌐 External Resources
 
----
+The project loads the following Google Fonts:
 
-## 📂 Portfolio Sections
+-   **Inter**
+-   **JetBrains Mono**
 
-The portfolio includes:
+These are included through Google Fonts in the HTML `<head>`.
+fileciteturn0file0L10-L13
 
-- Home
-- About
-- Skills
-- Experience
-- Education
-- Certifications
-- Achievements
-- Contact
+The portfolio otherwise uses native HTML, CSS, and JavaScript for its
+interface and interactions.
 
----
+## 🧪 Browser Compatibility
 
-## 🎨 Design
+The portfolio is intended for modern browsers such as:
 
-The portfolio uses a modern and responsive design focused on:
+-   Google Chrome
+-   Microsoft Edge
+-   Mozilla Firefox
+-   Safari
 
-- Clean UI
-- Professional typography
-- Responsive layouts
-- Smooth scrolling
-- Interactive navigation
-- Scroll animations
-- Mobile navigation
-- Accessible components
-- Professional contact form
+The JavaScript includes a fallback for browsers without
+`IntersectionObserver` support. fileciteturn0file1L178-L234
 
----
+## 🚀 Deployment
 
-## 📱 Responsive Design
+Because this is a static front-end website, it can be deployed using
+services that host HTML/CSS/JavaScript files.
 
-The portfolio is designed to work across:
+Typical deployment options include:
 
-- 💻 Desktop
-- 🖥️ Laptop
-- 📱 Mobile
-- 📟 Tablet
+-   GitHub Pages
+-   Vercel
+-   Netlify
+-   Any static web hosting service
 
-The layout automatically adapts to different screen sizes.
+Before deployment, make sure:
 
----
+1.  `index.html`, `style.css`, `script.js`, and `profile.png` are
+    included.
+2.  File names match the references in `index.html`.
+3.  The Google Apps Script contact endpoint is correctly configured if
+    the contact form is required.
+4.  All external links and contact information are up to date.
 
-## 📬 Contact
+## 🔧 Customization
 
-If you would like to connect with me regarding opportunities, projects, internships, or collaborations, feel free to reach out.
+To customize the portfolio:
 
-### LinkedIn
+### Personal Information
 
-[Connect with me on LinkedIn](https://linkedin.com/in/roshini-a-156324338)
+Edit the text in `index.html` for:
 
-### GitHub
+-   Name
+-   Professional title
+-   About description
+-   Skills
+-   Internship experience
+-   Projects
+-   Education
+-   Certifications
+-   Contact information
 
-[Visit my GitHub](https://github.com/Roshini147)
+### Profile Photo
 
-### LeetCode
+Replace:
 
-[View my LeetCode Profile](https://leetcode.com/u/WqnEbyLC83/)
+``` text
+profile.png
+```
 
-### HackerRank
+with your preferred profile image while keeping the same filename, or
+update the `<img>` source in `index.html`.
 
-[View my HackerRank Profile](https://hackerrank.com/profile/roshini120075)
+### Colors and Theme
 
-### Email
+The main theme colors are defined as CSS variables near the beginning of
+`style.css`, making it easy to customize the visual identity.
+fileciteturn0file2L6-L41
 
-**roshini120075@gmail.com**
+### Animations
 
----
+Animation behavior can be adjusted in `style.css` and `script.js`,
+including floating elements, scroll reveal, skill-bar transitions, and
+loading indicators.
 
-## 🚀 Running the Portfolio Locally
+## 📌 Current Portfolio Sections
 
-### 1. Clone the repository
+  -----------------------------------------------------------------------
+  Section                             Purpose
+  ----------------------------------- -----------------------------------
+  Home                                Introduction, professional role,
+                                      profile image, and calls to action
 
-```bash
-git clone https://github.com/Roshini147/your-portfolio-repository.git
+  About                               Developer profile and technology
+                                      focus
+
+  Skills                              Languages, AI/ML, web development,
+                                      database, and tools
+
+  Experience                          Internship timeline
+
+  Projects                            Featured development and AI/data
+                                      work
+
+  Education                           Academic history
+
+  Certifications                      Professional learning and
+                                      certifications
+
+  Beyond Academics                    Additional professional-development
+                                      highlights
+
+  Contact                             Contact details and contact form
+
+  Footer                              Branding, role, quote, and
+                                      copyright
+  -----------------------------------------------------------------------
+
+The HTML source defines these sections and the footer as part of the
+single-page portfolio structure. fileciteturn0file0L130-L143
+fileciteturn0file0L146-L220 fileciteturn0file0L222-L297
+fileciteturn0file0L300-L327
+
+## 🔮 Future Enhancements
+
+Possible future improvements include:
+
+-   Add dedicated project detail pages.
+-   Add live project/demo links.
+-   Add downloadable PDF resume.
+-   Add a blog or technical articles section.
+-   Add a dark/light theme switcher.
+-   Add project filtering by technology.
+-   Add stronger backend-side contact-form validation.
+-   Add analytics and SEO improvements.
+-   Add automated deployment through GitHub Actions.
+
+## 👩‍💻 Author
+
+**Roshini A.**
+
+Computer Science Engineering Student\
+Full Stack Developer \| AI Engineer
+
+### Connect
+
+-   LinkedIn: `linkedin.com/in/roshini-a-156324338`
+-   GitHub: `github.com/Roshini147`
+-   LeetCode: `leetcode.com/u/WqnEbyLC83/`
+-   HackerRank: `hackerrank.com/profile/roshini120075`
+
+The contact information and profile links are defined in the portfolio's
+Contact section. fileciteturn0file0L400-L490
+
+## 📄 License
+
+No explicit license is defined in the current project files. If this
+repository is intended for public reuse, add a license file such as
+`MIT License` after deciding the desired usage terms.
+
+------------------------------------------------------------------------
+
+**Learning. Building. Growing.**
